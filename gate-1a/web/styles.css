@@ -1,0 +1,370 @@
+:root {
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+  color: #f5f5f5;
+  background: #000;
+  font-size: 15px;
+  line-height: 1.5;
+  --line: #333;
+  color-scheme: dark;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+main {
+  max-width: 1500px;
+  margin: auto;
+  padding: 24px;
+}
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 20px;
+  align-items: start;
+}
+.monitor,
+.controlPanel {
+  background: #090909;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.monitor {
+  padding: 18px;
+}
+.controlPanel {
+  overflow: hidden;
+}
+.sectionhead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.sectionhead h2 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 600;
+}
+.sectionhead span,
+.muted,
+.count {
+  font-size: 12px;
+  color: #aaa;
+}
+.viewport {
+  position: relative;
+  aspect-ratio: 16/10;
+  background: #000;
+  overflow: hidden;
+  border: 1px solid #222;
+  border-radius: 4px;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: default;
+}
+#placeholder {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  color: #888;
+  pointer-events: none;
+}
+#placeholder strong {
+  font-size: 18px;
+  font-weight: 500;
+}
+button,
+.upload {
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background: #151515;
+  color: #eee;
+  padding: 9px 12px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  min-height: 44px;
+}
+button:hover,
+.upload:hover {
+  background: #272727;
+}
+button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.primary {
+  background: #eee;
+  color: #000;
+  border-color: #eee;
+}
+.primary:hover {
+  background: #ccc;
+}
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+summary:focus-visible,
+.upload:has(+ input:focus-visible) {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+a {
+  color: #bbb;
+  font-size: 12px;
+}
+.toolbar,
+.cameraOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+.cameraOptions {
+  align-items: center;
+}
+.cameraOptions label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 0;
+}
+.cameraOptions input {
+  width: 100px;
+  min-height: 44px;
+  padding: 0;
+  accent-color: #ddd;
+}
+label {
+  font-size: 13px;
+  display: block;
+  margin-bottom: 6px;
+}
+input,
+select {
+  font: inherit;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 9px;
+  width: 100%;
+  color: #eee;
+  background: #111;
+  min-height: 44px;
+}
+input[type="file"] {
+  font-size: 12px;
+  padding: 6px;
+}
+.nameRow {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 16px;
+  min-width: 0;
+}
+.nameRow input {
+  min-width: 0;
+}
+.collect {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0;
+}
+#photos,
+#import {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.panelTabs {
+  display: flex;
+  border-bottom: 1px solid var(--line);
+}
+.panelTabs button {
+  flex: 1;
+  min-height: 50px;
+  border: 0;
+  border-radius: 0;
+  background: #090909;
+  color: #aaa;
+}
+.panelTabs button[aria-selected="true"] {
+  color: #fff;
+  box-shadow: inset 0 -2px #fff;
+}
+.panelTabs button:focus-visible {
+  outline-offset: -4px;
+}
+[role="tabpanel"] {
+  padding: 18px;
+}
+[role="tabpanel"] > .toolbar:first-child {
+  margin-top: 0;
+}
+#referencePanel > .sectionhead {
+  margin-top: 20px;
+}
+.instrument {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+.instrument header {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+.instrument button {
+  min-height: 36px;
+  padding: 3px 8px;
+  font-size: 12px;
+}
+.examples {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.examples img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+}
+.match {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  border-top: 1px solid var(--line);
+  padding: 12px 0;
+}
+.match strong {
+  font-size: 15px;
+}
+.match span {
+  font-size: 12px;
+  color: #aaa;
+}
+.settings {
+  display: flex;
+  gap: 12px;
+  padding-top: 14px;
+}
+.settings label {
+  flex: 1;
+}
+details {
+  border-top: 1px solid var(--line);
+  margin-top: 18px;
+  padding-top: 14px;
+  font-size: 13px;
+}
+summary {
+  cursor: pointer;
+}
+.modelView {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+.modelView canvas {
+  position: static;
+  inset: auto;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  cursor: default;
+  touch-action: auto;
+  background: #000;
+}
+.modelView p {
+  font-size: 12px;
+}
+#status {
+  font-size: 12px;
+  color: #aaa;
+  min-height: 18px;
+  margin: 14px 0 0;
+}
+#status:empty,
+#storage:empty,
+#testResult:empty {
+  display: none;
+}
+[hidden] {
+  display: none !important;
+}
+@media (max-width: 850px) {
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+  main {
+    padding: 14px;
+  }
+  .monitor {
+    padding: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .viewport {
+    aspect-ratio: 4/3;
+  }
+  .settings {
+    flex-direction: column;
+  }
+  .cameraOptions {
+    gap: 8px;
+  }
+  .toolbar button {
+    flex: 1;
+  }
+}
+
+.modelSet {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 12px;
+  margin: 10px 0;
+}
+.modelSet summary {
+  font-weight: 600;
+}
+.modelSet .toolbar {
+  margin: 10px 0 0;
+}
+.modelSet p {
+  margin: 10px 0 0;
+}
+#examples > summary {
+  margin-bottom: 14px;
+}

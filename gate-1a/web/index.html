@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Object Lab · Live recognition</title>
+    <link rel="stylesheet" href="styles.css?v=1" />
+  </head>
+  <body>
+    <main>
+      <div class="workspace">
+        <section class="monitor">
+          <div class="sectionhead">
+            <h2>Camera</h2>
+            <span id="timing">Camera off</span>
+          </div>
+          <div class="viewport">
+            <video id="video" autoplay muted playsinline></video
+            ><canvas
+              id="overlay"
+              aria-label="Camera recognition guide."
+              tabindex="0"
+            ></canvas>
+            <div id="placeholder"><strong>Camera off</strong></div>
+          </div>
+          <div class="cameraOptions">
+            <button id="mirror" aria-pressed="true">Mirror preview: on</button
+            ><label for="guideSize"
+              >Guide size
+              <input
+                id="guideSize"
+                type="range"
+                min="35"
+                max="95"
+                step="5"
+                value="60" /></label
+            ><button id="improve">Add camera examples</button>
+          </div>
+
+          <div class="modelView">
+            <canvas
+              id="modelPreview"
+              width="384"
+              height="384"
+              aria-label="Latest camera crop sent to the recognition model"
+            ></canvas>
+            <p class="muted">Model view</p>
+          </div>
+          <p id="status" role="status">Ready.</p>
+        </section>
+        <aside class="controlPanel" aria-label="Recognition controls">
+          <div class="panelTabs" role="tablist" aria-label="Workspace controls">
+            <button
+              id="videoTab"
+              role="tab"
+              aria-selected="true"
+              aria-controls="videoPanel"
+              tabindex="0"
+            >
+              Start video
+            </button>
+            <button
+              id="referenceTab"
+              role="tab"
+              aria-selected="false"
+              aria-controls="referencePanel"
+              tabindex="-1"
+            >
+              Sets
+            </button>
+          </div>
+          <section id="videoPanel" role="tabpanel" aria-labelledby="videoTab">
+            <div class="toolbar">
+              <button id="camera" class="primary">Start video</button
+              ><button id="stop" disabled>Stop video</button
+              ><button id="run" disabled>Resume recognition</button>
+            </div>
+            <div class="sectionhead"><h2>Live results</h2></div>
+            <div id="results" aria-live="polite">
+              <p class="muted">Waiting for camera.</p>
+            </div>
+          </section>
+          <section
+            id="referencePanel"
+            role="tabpanel"
+            aria-labelledby="referenceTab"
+            hidden
+          >
+            <div class="sectionhead">
+              <h2>Sets</h2>
+              <button id="newSet">New set</button>
+            </div>
+            <div id="sets"></div>
+            <details id="examples" open>
+              <summary>Examples</summary>
+              <div class="sectionhead">
+                <h2>Object library</h2>
+                <span id="toolCount">0 tools</span>
+              </div>
+              <form id="addForm">
+                <label for="name">Object name</label>
+                <div class="nameRow">
+                  <input
+                    id="name"
+                    required
+                    maxlength="64"
+                    placeholder="e.g. Screwdriver"
+                  /><button class="primary">Add</button>
+                </div>
+              </form>
+              <label for="selected">Object</label
+              ><select id="selected">
+                <option value="">Add an object first</option>
+              </select>
+              <div class="collect">
+                <label class="upload" for="photos">Upload photos</label
+                ><input
+                  id="photos"
+                  type="file"
+                  accept="image/*"
+                  multiple
+                /><button id="capture" disabled>Capture example</button>
+              </div>
+              <button id="background">Capture empty view</button>
+              <div id="library"></div>
+            </details>
+            <details>
+              <summary>Import / export</summary>
+              <div class="toolbar">
+                <button id="export">Export library</button
+                ><label class="upload" for="import">Import library</label
+                ><input
+                  id="import"
+                  type="file"
+                  accept="application/json,.json"
+                />
+              </div>
+              <p id="storage" class="muted"></p>
+            </details>
+            <label for="testPhoto">Test photo</label
+            ><input id="testPhoto" type="file" accept="image/*" />
+            <p id="testResult" role="status" class="muted"></p>
+            <details class="advanced">
+              <summary>Matching settings</summary>
+              <div class="settings">
+                <label
+                  >Minimum similarity
+                  <input
+                    id="threshold"
+                    type="number"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="0.30" /></label
+                ><label
+                  >Minimum separation
+                  <input
+                    id="margin"
+                    type="number"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="0.00"
+                /></label>
+              </div>
+            </details>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <script src="core.js?v=1"></script>
+    <script src="app.js?v=1"></script>
+  </body>
+</html>

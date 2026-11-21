@@ -1,0 +1,45 @@
+{
+  "model": "Xenova/dinov2-small",
+  "referenceChecks": [
+    {
+      "id": "workshop-wgge",
+      "correct": 5,
+      "total": 5
+    },
+    {
+      "id": "workshop-goggles",
+      "correct": 5,
+      "total": 5
+    },
+    {
+      "id": "workshop-screwdriver",
+      "correct": 5,
+      "total": 5
+    },
+    {
+      "id": "workshop-hex",
+      "correct": 3,
+      "total": 5
+    }
+  ],
+  "floors": {
+    "workshop-wgge": 0.7520836543014812,
+    "workshop-goggles": 0.55,
+    "workshop-screwdriver": 0.6633886500079482,
+    "workshop-hex": 0.55
+  },
+  "heldOutPhotos": [
+    {
+      "file": "wgge-7.jpg",
+      "expected": "WGGE WG-015 wire stripper",
+      "actual": "WGGE WG-015 wire stripper",
+      "accepted": true,
+      "reason": "accepted",
+      "score": 0.6652967743025975,
+      "gap": 0.4414518470686868,
+      "floor": 0.3
+    }
+  ],
+  "heldOutAccuracy": null,
+  "notes": "One WGGE source photo withheld as a smoke test. Exact glasses and screwdriver have two source photos plus three rotated variants each. No held-out test of either exact item; no independent camera accuracy benchmark."
+}

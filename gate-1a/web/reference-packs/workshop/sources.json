@@ -1,0 +1,105 @@
+{
+  "description": "Internet product photos for a local recognition experiment. No held-out accuracy claim.",
+  "images": [
+    {
+      "category": "wgge",
+      "name": "WGGE WG-015 wire stripper",
+      "page": "https://www.wgelectronics.com/product/wgge-wg-015-professional-crimping-tool-multi-tool-wire-stripper-cutter-multi-function-hand-tool/",
+      "url": "https://www.wgelectronics.com/wp-content/uploads/2017/05/%E7%BA%BF%E9%92%B301-1-%E5%89%AF%E6%9C%AC.jpg",
+      "file": "wgge-1.jpg",
+      "sha256": "4da5e9595722740b63ef4d354b6442946c4fe1331ce4407e150f053a60efd505"
+    },
+    {
+      "category": "wgge",
+      "name": "WGGE WG-015 wire stripper",
+      "page": "https://www.wgelectronics.com/product/wgge-wg-015-professional-crimping-tool-multi-tool-wire-stripper-cutter-multi-function-hand-tool/",
+      "url": "https://www.wgelectronics.com/wp-content/uploads/2017/05/%E7%BA%BF%E9%92%B301-3-%E5%89%AF%E6%9C%AC.jpg",
+      "file": "wgge-3.jpg",
+      "sha256": "0e5c48dd3f9f97ef063b3d09ebc1659d6087ae8b4d4846adaf46f3fed513e4d7"
+    },
+    {
+      "category": "wgge",
+      "name": "WGGE WG-015 wire stripper",
+      "page": "https://www.wgelectronics.com/product/wgge-wg-015-professional-crimping-tool-multi-tool-wire-stripper-cutter-multi-function-hand-tool/",
+      "url": "https://www.wgelectronics.com/wp-content/uploads/2017/05/%E7%BA%BF%E9%92%B301-4-%E5%89%AF%E6%9C%AC.jpg",
+      "file": "wgge-4.jpg",
+      "sha256": "8bfe04cbbdb40b1915cc1195bd9afa352e90f1cee67a00b630ad493deab25308"
+    },
+    {
+      "category": "wgge",
+      "name": "WGGE WG-015 wire stripper",
+      "page": "https://www.wgelectronics.com/product/wgge-wg-015-professional-crimping-tool-multi-tool-wire-stripper-cutter-multi-function-hand-tool/",
+      "url": "https://www.wgelectronics.com/wp-content/uploads/2017/05/%E7%BA%BF%E9%92%B301-5-%E5%89%AF%E6%9C%AC.jpg",
+      "file": "wgge-5.jpg",
+      "sha256": "4e8005f0ff031a0175bc4b99cad7359f93cbdb22bbf6c3d0f3f5820f70497d09"
+    },
+    {
+      "category": "wgge",
+      "name": "WGGE WG-015 wire stripper",
+      "page": "https://www.wgelectronics.com/product/wgge-wg-015-professional-crimping-tool-multi-tool-wire-stripper-cutter-multi-function-hand-tool/",
+      "url": "https://www.wgelectronics.com/wp-content/uploads/2017/05/%E7%BA%BF%E9%92%B301-7-%E5%89%AF%E6%9C%AC.jpg",
+      "file": "wgge-7.jpg",
+      "sha256": "f968d1d808ffdb9f3b663ae975dc591d4688e081ffb952a80ff1d20dfb3575e3"
+    },
+    {
+      "category": "hex",
+      "name": "Red Allen-key set",
+      "page": "https://www.tekton.com/folding-hex-key-wrench-set-8-piece-25142",
+      "url": "https://images.tekton.com/assets/tekton-folding-key-set-25142_angle.jpg?quality=75&width=1280",
+      "file": "hex-1.jpg",
+      "sha256": "be79b4ba187b57cadd184695808606a0a3a459689a8ec883df8f940d0152c089"
+    },
+    {
+      "category": "hex",
+      "name": "Red Allen-key set",
+      "page": "https://www.tekton.com/folding-hex-key-wrench-set-8-piece-25142",
+      "url": "https://images.tekton.com/assets/tekton-folding-key-set-25142_back-angle.jpg?quality=75&width=1280",
+      "file": "hex-2.jpg",
+      "sha256": "65d497c7304d0a22dff1124bec058ddeb278e3e118be8a182022d881d95a0bd5"
+    },
+    {
+      "category": "hex",
+      "name": "Red Allen-key set",
+      "page": "https://www.tekton.com/folding-hex-key-wrench-set-8-piece-25142",
+      "url": "https://images.tekton.com/assets/tekton-folding-key-set-25142_storage.jpg?quality=75&width=1280",
+      "file": "hex-4.jpg",
+      "sha256": "be440569716815d5897daacb5395cc0d54bc0bcfc3e391dfde62908472fa8a06"
+    },
+    {
+      "category": "hex",
+      "name": "Red Allen-key set",
+      "page": "https://www.tekton.com/folding-hex-key-wrench-set-8-piece-25142",
+      "url": "https://images.tekton.com/assets/tekton-folding-key-set-25142_in-hand.jpg?quality=75&width=1280",
+      "file": "hex-5.jpg",
+      "sha256": "34274a52af2f697245138b57d0f3b52777501af7aa254e0b6a2a81215bcead27"
+    },
+    {
+      "file": "protector-hd.jpg",
+      "name": "DeWalt DPG54-1C safety glasses",
+      "page": "https://www.homedepot.com/p/202220453",
+      "url": "https://images.thdstatic.com/productImages/64b7e5c3-6960-4556-993a-be0846552bec/svn/dewalt-safety-glasses-dpg54-1c-64_600.jpg",
+      "sha256": "59a4f567b80943129f8d188ab395babbfc7c3b79fde404f6926ecc1a66f42b29"
+    },
+    {
+      "file": "protector-gallery-3.webp",
+      "name": "DeWalt DPG54-1C safety glasses",
+      "page": "https://www.ebay.com/itm/187394910543",
+      "url": "https://i.ebayimg.com/images/g/h6IAAeSwgEdoa8WD/s-l1600.webp",
+      "sha256": "01ec659c6de4ffac34b67538d0d2af480b519dac0533dd5952823a8336541a2d"
+    },
+    {
+      "file": "stanley-acme-1.jpg",
+      "name": "Stanley STHT60786 screwdriver",
+      "page": "https://www.acmetools.com/stanley-screwdriver-phillips-2-x-4inch-stht60786/076174607864.html",
+      "url": "https://www.acmetools.com/dw/image/v2/BHBS_PRD/on/demandware.static/-/Sites-acme-catalog-m-en/default/dw05a7f1c8/images/images/catalog/product/076174607864/stanley-screwdriver-phillips-2-x-4inch-stht60786.jpg",
+      "sha256": "55e26e8183a779703eac16c081644beefa24cbb37b35f0261425cceb07be913d"
+    },
+    {
+      "file": "stanley-acme-2.jpg",
+      "name": "Stanley STHT60786 screwdriver",
+      "page": "https://www.acmetools.com/stanley-screwdriver-phillips-2-x-4inch-stht60786/076174607864.html",
+      "url": "https://www.acmetools.com/dw/image/v2/BHBS_PRD/on/demandware.static/-/Sites-acme-catalog-m-en/default/dw015cfd27/images/images/catalog/product/076174607864/stanley-screwdriver-phillips-2-x-4inch-stht60786-detail-view-2.jpg",
+      "sha256": "66a629f45c50170d260991bf80e62be8d40d2ed0f65f43c05143e2cf60027176"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "altus-dexterity-mono",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Gate 1A recognition prototype and Gate 1B planning workspace",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "python3 -m http.server 5381 --bind 127.0.0.1 --directory gate-1a/web",
+    "test": "node --test gate-1a/tests/*.test.cjs",
+    "check": "node --check gate-1a/web/app.js && node --check gate-1a/web/core.js && node --check gate-1a/web/worker.js && node --check gate-1a/scripts/build-workshop.mjs",
+    "references:download": "python3 gate-1a/scripts/download-references.py",
+    "references:build": "node gate-1a/scripts/build-workshop.mjs"
+  },
+  "devDependencies": {
+    "@huggingface/transformers": "3.8.1",
+    "sharp": "0.34.5"
+  }
+}
